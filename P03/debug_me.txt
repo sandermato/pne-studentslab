@@ -1,0 +1,3 @@
+The error doesn't occur in any function, instead it is on the 2º print.
+As 'c' and 'd' are both 3, when the first function 'g' executes, it makes them rest, making it equal to 0.
+Then in the function 'f' when it is on the denominator, you cant divide by 0, resulting on the error.
