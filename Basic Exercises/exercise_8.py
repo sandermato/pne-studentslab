@@ -11,11 +11,17 @@ def average(grades):
     return grades
 
 def get_status(avg):
+    pass_count = 0
+    fail_count = 0
     for i in range(0, len(avg)):
         pass_grade = "FAIL"
         if avg[i]["average"] > 5.0:
             pass_grade = "PASS"
+            pass_count += 1
+        else:
+            fail_count += 1
         print(avg[i]["name"],":", avg[i]["average"],"->", pass_grade )
+    print("\nResults:", pass_count,"passed,", fail_count,"failed")
 
 if __name__ == "__main__":
     students = [
